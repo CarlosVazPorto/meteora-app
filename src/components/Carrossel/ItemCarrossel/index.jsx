@@ -1,4 +1,3 @@
-import React from "react";
 import Titulo from "@/components/Titulo";
 
 const ItemCarrossel = ({ src, alt, itemCarrossel }) => {

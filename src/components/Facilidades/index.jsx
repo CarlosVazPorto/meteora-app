@@ -1,4 +1,3 @@
-import React from "react";
 import Titulo from "@/components/Titulo";
 import Facilidade from "./Facilidade";
 import facilidades from "@/mocks/facilidades.json";

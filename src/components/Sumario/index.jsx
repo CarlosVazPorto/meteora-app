@@ -1,4 +1,3 @@
-import React from "react";
 import Botao from "@/components/Botao";
 import ResumoCompra from "./ResumoCompra";
 import { useNavigate } from "react-router-dom";

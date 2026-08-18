@@ -1,4 +1,3 @@
-import React from "react";
 import logoMeteora from "/assets/images/logo-meteora.png";
 
 const Logo = () => {

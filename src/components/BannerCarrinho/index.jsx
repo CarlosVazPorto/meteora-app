@@ -1,4 +1,3 @@
-import React from "react";
 import bannerCarrinho from "/assets/images/banner-carrinho.png";
 
 const BannerCarrinho = () => {

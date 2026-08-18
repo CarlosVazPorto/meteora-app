@@ -1,4 +1,3 @@
-import React from "react";
 import Botao from "@/components/Botao";
 import Quantidade from "@/components/Quantidade";
 import ValorFormatado from "@/components/ValorFormatado";

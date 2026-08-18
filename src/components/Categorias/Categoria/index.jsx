@@ -1,4 +1,3 @@
-import React from "react";
 
 const Categoria = ({ alt, src, descricao }) => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import BarraNavegacao from "@/components/BarraNavegacao";
 import Titulo from "@/components/Titulo";
 import Sumario from "@/components/Sumario";

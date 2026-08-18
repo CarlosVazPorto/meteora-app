@@ -1,4 +1,3 @@
-import React from "react";
 import ItemCarrossel from "./ItemCarrossel";
 import sliders from "@/mocks/carrossel.json";
 import IndicadoresCarrossel from "./IndicadoresCarrossel";
