@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export const CarrinhoContext = createContext();
+const CarrinhoContext = createContext();
 
 export const CarrinhoProvider = ({ children }) => {
     return (
