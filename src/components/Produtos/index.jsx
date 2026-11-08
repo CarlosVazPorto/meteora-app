@@ -7,6 +7,21 @@ import { CarrinhoContext } from "@/context/CarrinhoContext";
 const Produtos = () => {
   const { carrinho, setCarrinho } = useContext(CarrinhoContext);
 
+  function adicionarProduto(novoProduto) {
+    const temOProduto = carrinho.some((itemDoCarrinho) => 
+      itemDoCarrinho.id === novoProduto.id
+   );
+  
+   if (!temOProduto) {
+    novoProduto.quantidade = 1;
+    return setCarrinho((carrinhoAnterior) => [
+      ...carrinhoAnterior,
+      novoProduto,
+    ])
+   };
+
+  }
+
   return (
     <section role="produtos" aria-label="Produtos que estão bombando!">
       <Titulo>Produtos que estão bombando!</Titulo>
