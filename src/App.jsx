@@ -7,23 +7,11 @@ import PaginaErro from "./pages/PaginaErro";
 import "./App.css";
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Home/>
-          }
-        />
-        <Route
-          path="/carrinho"
-          element={
-            <Carrinho/>
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/carrinho" element={<Carrinho />} />
         <Route path="*" element={<PaginaErro />} />
       </Routes>
     </BrowserRouter>
