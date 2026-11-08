@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { CarrinhoProvider } from "./context/CarrinhoContext";
 import Home from "./pages/Home";
 import Carrinho from "./pages/Carrinho";
 import PaginaErro from "./pages/PaginaErro";
@@ -7,15 +7,17 @@ import PaginaErro from "./pages/PaginaErro";
 import "./App.css";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/carrinho" element={<Carrinho />} />
-        <Route path="*" element={<PaginaErro />} />
-      </Routes>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <CarrinhoProvider>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/carrinho" element={<Carrinho />} />
+                    <Route path="*" element={<PaginaErro />} />
+                </Routes>
+            </CarrinhoProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;
