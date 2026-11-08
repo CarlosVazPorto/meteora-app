@@ -15,27 +15,13 @@ function App() {
         <Route
           path="/"
           element={
-            <Home
-              carrinho={carrinho}
-              adicionarProduto={adicionarProduto}
-              removerProduto={removerProduto}
-              removerProdutoCarrinho={removerProdutoCarrinho}
-              valorTotalCarrinho={valorTotalCarrinho}
-              quantidadeProdutos={quantidadeProdutos}
-            />
+            <Home/>
           }
         />
         <Route
           path="/carrinho"
           element={
-            <Carrinho
-              carrinho={carrinho}
-              adicionarProduto={adicionarProduto}
-              removerProduto={removerProduto}
-              removerProdutoCarrinho={removerProdutoCarrinho}
-              valorTotalCarrinho={valorTotalCarrinho}
-              quantidadeProdutos={quantidadeProdutos}
-            />
+            <Carrinho/>
           }
         />
         <Route path="*" element={<PaginaErro />} />
