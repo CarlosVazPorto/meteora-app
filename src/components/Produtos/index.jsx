@@ -25,7 +25,7 @@ const Produtos = () => {
         if (itemDoCarrinho.id === novoProduto.id)
           itemDoCarrinho.quantidade += 1;
         return itemDoCarrinho;
-      })
+      }),
     );
   }
 
@@ -35,7 +35,7 @@ const Produtos = () => {
 
     if (ehUltimaUnidade) {
       return setCarrinho((carrinhoAnterior) =>
-        carrinhoAnterior.filter((itemDoCarrinho) => itemDoCarrinho.id !== id)
+        carrinhoAnterior.filter((itemDoCarrinho) => itemDoCarrinho.id !== id),
       );
     }
 
@@ -43,7 +43,7 @@ const Produtos = () => {
       carrinhoAnterior.map((itemDoCarrinho) => {
         if (itemDoCarrinho.id === id) itemDoCarrinho.quantidade -= 1;
         return itemDoCarrinho;
-      })
+      }),
     );
   }
 
