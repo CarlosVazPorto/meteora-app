@@ -14,17 +14,11 @@ const ListaProdutosCarrinho = ({ carrinho }) => {
             <ItemCarrinho
               key={itemCarrinho.id}
               itemCarrinho={itemCarrinho}
-              adicionarProduto={adicionarProduto}
-              removerProduto={removerProduto}
-              removerProdutoCarrinho={removerProdutoCarrinho}
             />
           ) : (
             <ItemCarrinhoSuspenso
               key={itemCarrinho.id}
               itemCarrinho={itemCarrinho}
-              adicionarProduto={adicionarProduto}
-              removerProduto={removerProduto}
-              removerProdutoCarrinho={removerProdutoCarrinho}
             />
           );
         })
