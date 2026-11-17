@@ -38,7 +38,8 @@ export const useCarrinhoContext = () => {
 
     setCarrinho((carrinhoAnterior) =>
       carrinhoAnterior.map((itemDoCarrinho) => {
-        if (itemDoCarrinho.id === id) itemDoCarrinho.quantidade -= 1;
+        if (itemDoCarrinho.id === id) 
+          itemDoCarrinho.quantidade -= 1;
         return itemDoCarrinho;
       }),
     );
