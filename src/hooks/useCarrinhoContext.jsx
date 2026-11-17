@@ -6,7 +6,7 @@ export const useCarrinhoContext = () => {
 
   function adicionarProduto(novoProduto) {
     const temOProduto = carrinho.some(
-      (itemDoCarrinho) => itemDoCarrinho.id === novoProduto.id,
+      (itemDoCarrinho) => itemDoCarrinho.id === novoProduto.id
     );
 
     if (!temOProduto) {
